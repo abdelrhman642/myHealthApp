@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CustomBottom extends StatelessWidget {
-  CustomBottom({this.title, this.colorsIcon, super.key});
+  CustomBottom({this.onTap,this.title, this.colorsIcon, super.key});
   Color? colorsIcon;
   String? title;
+  VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print(title);
-      },
+      onTap: onTap,
       child: Container(
         height: 50,
         width: 200,
