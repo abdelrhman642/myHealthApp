@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/widgets/home_widget.dart';
+import 'package:flutter/services.dart';
+import 'package:health_app/pages/home_widget.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Lock orientation
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
   runApp(MyApp()); // This runs your Flutter app
 }
 

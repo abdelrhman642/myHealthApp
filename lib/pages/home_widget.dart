@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/widgets/login_widget.dart';
+import 'package:health_app/pages/login_widget.dart';
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
