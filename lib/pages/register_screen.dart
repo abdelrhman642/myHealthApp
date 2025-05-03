@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/pages/login_widget.dart';
+import 'package:health_app/pages/login_screen.dart';
 import 'package:health_app/widgets/custom_bottom.dart';
 import 'package:health_app/widgets/custom_textfild.dart';
 
@@ -51,6 +51,7 @@ class RegisterWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomBottom(
+                  textColor: Colors.white,
                   onTap: () {
                     Navigator.pop(context, LoginWidget());
                   },
@@ -58,7 +59,11 @@ class RegisterWidget extends StatelessWidget {
                   colorsIcon: Color(0xff9F9C9C9C).withOpacity(0.61),
                 ),
                 SizedBox(width: 30),
-                CustomBottom(title: "Proceed", colorsIcon: Color(0xff00D1FF)),
+                CustomBottom(
+                  textColor: Colors.white,
+                  title: "Proceed",
+                  colorsIcon: Color(0xff00D1FF),
+                ),
               ],
             ),
           ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/pages/my_profile.dart';
-import 'package:health_app/pages/register_widget.dart';
+import 'package:health_app/pages/my_profile_screen.dart';
+import 'package:health_app/pages/register_screen.dart';
 import 'package:health_app/widgets/custom_bottom.dart';
 import 'package:health_app/widgets/custom_textfild.dart';
 
@@ -64,11 +64,13 @@ class LoginWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomBottom(
+                  textColor: Colors.white,
                   title: "forgot password",
                   colorsIcon: Color(0xff9F9C9C9C).withOpacity(0.61),
                 ),
                 SizedBox(width: 30),
                 CustomBottom(
+                  textColor: Colors.white,
                   onTap: () {
                     Navigator.push(
                       context,

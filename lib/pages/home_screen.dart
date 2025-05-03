@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/pages/login_widget.dart';
+import 'package:health_app/pages/login_screen.dart';
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
@@ -11,9 +11,7 @@ class HomeWidget extends StatelessWidget {
         // Setting the background image
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-              'assets/1.png',
-            ), 
+            image: AssetImage('assets/image/1.png'),
             fit:
                 BoxFit.cover, // To make sure the image covers the entire screen
           ),
@@ -63,8 +61,8 @@ class HomeWidget extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black, 
-                    foregroundColor: Colors.white, 
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
                   ),
                   icon: Icon(Icons.play_arrow, size: 40),
                   label: Text(

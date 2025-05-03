@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
 class CustomBottom extends StatelessWidget {
-  CustomBottom({this.onTap,this.title, this.colorsIcon, super.key});
-  Color? colorsIcon;
+  CustomBottom({
+    this.textColor,
+    this.onTap,
+    this.title,
+    this.colorsIcon,
+    super.key,
+  });
+   Color? colorsIcon;
+  Color? textColor;
   String? title;
   VoidCallback? onTap;
   @override
@@ -13,11 +20,11 @@ class CustomBottom extends StatelessWidget {
         height: 50,
         width: 200,
         alignment: Alignment.center,
-        child: Text(
+         child: Text(
           title!,
           style: TextStyle(
             fontSize: 15,
-            color: Colors.white,
+            color: textColor,
             fontWeight: FontWeight.bold,
           ),
         ),
