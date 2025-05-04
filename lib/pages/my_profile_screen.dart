@@ -49,18 +49,18 @@ class MyProfile extends StatelessWidget {
                   child: Column(
                     children: [
                       Material(
-                      
                         color: Colors.transparent,
                         child: Align(
                           alignment: AlignmentDirectional.centerEnd,
-                          child: InkWell( onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => EditProfile(),
-                            ),
-                          );
-                        },
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => EditProfile(),
+                                ),
+                              );
+                            },
                             child: Padding(
                               padding: const EdgeInsetsDirectional.symmetric(
                                 horizontal: 15,
@@ -132,6 +132,8 @@ class MyProfile extends StatelessWidget {
                 ),
                 SizedBox(height: 40),
                 CustomBottom(
+                  fontSize: 35,
+                  textColor: Colors.black.withOpacity(0.71),
                   onTap: () {},
                   colorsIcon: Color(0xff4F4E4E).withOpacity(0.71),
                   title: "Home",

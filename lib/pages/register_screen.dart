@@ -51,6 +51,7 @@ class RegisterWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomBottom(
+                  fontSize: 20,
                   textColor: Colors.white,
                   onTap: () {
                     Navigator.pop(context, LoginWidget());
@@ -60,6 +61,8 @@ class RegisterWidget extends StatelessWidget {
                 ),
                 SizedBox(width: 30),
                 CustomBottom(
+                  onTap: () {},
+                  fontSize: 20,
                   textColor: Colors.white,
                   title: "Proceed",
                   colorsIcon: Color(0xff00D1FF),

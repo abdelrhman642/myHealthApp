@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 class CustomBottom extends StatelessWidget {
   CustomBottom({
-    this.textColor,
-    this.onTap,
-    this.title,
-    this.colorsIcon,
+   required this.textColor,
+   required this.onTap,
+   required this.title,
+   required this.colorsIcon,
+   required this.fontSize,
     super.key,
   });
-  Color? colorsIcon;
-  Color? textColor;
-  String? title;
-  VoidCallback? onTap;
+ final Color? colorsIcon;
+final  Color? textColor;
+final  String? title;
+final  double? fontSize;
+ final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -28,7 +30,7 @@ class CustomBottom extends StatelessWidget {
         child: Text(
           title!,
           style: TextStyle(
-                fontSize: 15,
+                fontSize:fontSize,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),

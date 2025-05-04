@@ -64,12 +64,20 @@ class LoginWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomBottom(
+                  onTap: () {
+
+
+
+
+                  },
+                  fontSize: 15,
                   textColor: Colors.white,
                   title: "forgot password",
                   colorsIcon: Color(0xff9F9C9C9C).withOpacity(0.61),
                 ),
                 SizedBox(width: 30),
                 CustomBottom(
+                  fontSize: 20,
                   textColor: Colors.white,
                   onTap: () {
                     Navigator.push(
