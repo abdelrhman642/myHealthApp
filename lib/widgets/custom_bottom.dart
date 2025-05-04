@@ -8,31 +8,33 @@ class CustomBottom extends StatelessWidget {
     this.colorsIcon,
     super.key,
   });
-   Color? colorsIcon;
+  Color? colorsIcon;
   Color? textColor;
   String? title;
   VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        height: 50,
-        width: 200,
-        alignment: Alignment.center,
-         child: Text(
+    return SizedBox(
+     height: 50,
+          width: 200,
+      child: ElevatedButton(
+        onPressed:onTap,
+        style: ElevatedButton.styleFrom(
+          overlayColor:
+          Colors.black,
+          backgroundColor:colorsIcon,
+          splashFactory: NoSplash.splashFactory,
+        ),
+        child: Text(
           title!,
           style: TextStyle(
-            fontSize: 15,
-            color: textColor,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        decoration: BoxDecoration(
-          color: colorsIcon,
-          borderRadius: BorderRadius.circular(50),
+                fontSize: 15,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
         ),
       ),
     );
+    
   }
 }

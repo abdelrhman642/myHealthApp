@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/pages/edit_profile.dart';
 import 'package:health_app/widgets/custom_bottom.dart';
 import 'package:health_app/widgets/custom_text_myprofile.dart';
 
@@ -47,17 +48,30 @@ class MyProfile extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      Align(
-                        alignment: AlignmentDirectional.centerEnd,
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.symmetric(
-                            horizontal: 15,
-                            vertical: 10,
-                          ),
-                          child: Image.asset(
-                            'assets/image/icon _edit pencil_.png',
-                            height: 30,
-                            width: 30,
+                      Material(
+                      
+                        color: Colors.transparent,
+                        child: Align(
+                          alignment: AlignmentDirectional.centerEnd,
+                          child: InkWell( onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EditProfile(),
+                            ),
+                          );
+                        },
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.symmetric(
+                                horizontal: 15,
+                                vertical: 10,
+                              ),
+                              child: Image.asset(
+                                'assets/image/icon _edit pencil_.png',
+                                height: 30,
+                                width: 30,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -116,7 +130,9 @@ class MyProfile extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 40),
                 CustomBottom(
+                  onTap: () {},
                   colorsIcon: Color(0xff4F4E4E).withOpacity(0.71),
                   title: "Home",
                 ),

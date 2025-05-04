@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/pages/login_screen.dart';
 
-class HomeWidget extends StatelessWidget {
-  const HomeWidget({super.key});
+class StartWidget extends StatelessWidget {
+  const StartWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
