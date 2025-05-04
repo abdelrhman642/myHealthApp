@@ -78,6 +78,7 @@ class LoginWidget extends StatelessWidget {
                 SizedBox(width: 30),
                 CustomBottom(
                   fontSize: 20,
+                  
                   textColor: Colors.white,
                   onTap: () {
                     Navigator.push(

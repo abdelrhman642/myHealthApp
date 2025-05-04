@@ -67,7 +67,7 @@ class MyProfile extends StatelessWidget {
                                 vertical: 10,
                               ),
                               child: Image.asset(
-                                'assets/image/icon _edit pencil_.png',
+                                'assets/image/🦆 icon _edit pencil_.png',
                                 height: 30,
                                 width: 30,
                               ),
