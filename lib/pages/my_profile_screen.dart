@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/pages/edit_profile.dart';
+import 'package:health_app/pages/home_page.dart';
 import 'package:health_app/widgets/custom_bottom.dart';
 import 'package:health_app/widgets/custom_text_myprofile.dart';
 
@@ -134,7 +135,12 @@ class MyProfile extends StatelessWidget {
                 CustomBottom(
                   fontSize: 35,
                   textColor: Colors.black.withOpacity(0.71),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  },
                   colorsIcon: Color(0xff4F4E4E).withOpacity(0.71),
                   title: "Home",
                 ),
