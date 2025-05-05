@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
@@ -37,8 +39,7 @@ class HomePage extends StatelessWidget {
         ),
         leading: Icon(Icons.more_vert, color: Colors.white, size: 40),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 17, top: 7),
@@ -58,6 +59,8 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   CustomContainerhome(
+                    fontSize: 25,
+
                     textContainer: 'Diet Tips',
                     imagecontainer: Image.asset(
                       'assets/image/Rectangle 22.png',
@@ -65,6 +68,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(width: 8),
                   CustomContainerhome(
+                    fontSize: 25,
                     textContainer: 'Fitness Tips',
                     imagecontainer: Image.asset(
                       'assets/image/Rectangle 20.png',
@@ -90,13 +94,56 @@ class HomePage extends StatelessWidget {
             child: Row(
               children: [
                 CustomContainerhome(
+                  fontSize: 25,
                   imagecontainer: Image.asset('assets/image/Rectangle 26.png'),
                   textContainer: 'Pregnancy articles',
                 ),
                 SizedBox(width: 8),
                 CustomContainerhome(
+                  fontSize: 25,
                   imagecontainer: Image.asset('assets/image/Rectangle 24.png'),
                   textContainer: 'Diseases articles',
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 17, top: 7),
+            child: Text(
+              'Physical disabilities',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CustomContainerhome(
+                  fontSize: 25,
+                  imagecontainer: Image.asset('assets/image/Rectangle 30.png'),
+                  textContainer: 'Physical disabilities',
+                ),
+                SizedBox(width: 8),
+                CustomContainerhome(
+                  fontSize: 25,
+                  imagecontainer: Image.asset('assets/image/Rectangle 28.png'),
+                  textContainer: 'Fitness program',
+                ),
+                SizedBox(width: 8),
+                CustomContainerhome(
+                  fontSize: 25,
+                  imagecontainer: Image.asset('assets/image/Rectangle 266.png'),
+                  textContainer: 'Social contact',
+                ),
+                SizedBox(width: 8),
+                CustomContainerhome(
+                  fontSize: 25,
+                  imagecontainer: Image.asset('assets/image/Rectangle 264.png'),
+                  textContainer: 'Benefits of sports activity',
                 ),
               ],
             ),
