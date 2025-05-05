@@ -52,30 +52,23 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 14),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  CustomContainerhome(
-                    fontSize: 25,
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CustomContainerhome(
+                  fontSize: 25,
 
-                    textContainer: 'Diet Tips',
-                    imagecontainer: Image.asset(
-                      'assets/image/Rectangle 22.png',
-                    ),
-                  ),
-                  SizedBox(width: 8),
-                  CustomContainerhome(
-                    fontSize: 25,
-                    textContainer: 'Fitness Tips',
-                    imagecontainer: Image.asset(
-                      'assets/image/Rectangle 20.png',
-                    ),
-                  ),
-                ],
-              ),
+                  textContainer: 'Diet Tips',
+                  imagecontainer: Image.asset('assets/image/Rectangle 22.png'),
+                ),
+                SizedBox(width: 8),
+                CustomContainerhome(
+                  fontSize: 25,
+                  textContainer: 'Fitness Tips',
+                  imagecontainer: Image.asset('assets/image/Rectangle 20.png'),
+                ),
+              ],
             ),
           ),
           Padding(
