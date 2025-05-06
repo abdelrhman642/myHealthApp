@@ -20,12 +20,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
+      
         selectedIndex: index,
         onDestinationSelected: (index) => setState(() => this.index = index),
         backgroundColor: Color(0xff375D89),
         height: 72,
+        
         destinations: [
           NavigationDestination(
+             
             selectedIcon: Icon(Icons.home, size: 45, color: KAppBarColor),
             icon: Icon(Icons.home, size: 30, color: Colors.white),
             label: 'Home',
@@ -75,7 +78,29 @@ class _HomePageState extends State<HomePage> {
         ),
         leading: Icon(Icons.more_vert, color: Colors.white, size: 40),
       ),
-      body: ListView(
+      body: getPages(index),
+    );
+  }
+}
+
+Widget getPages(index){
+ return switch (index) {
+     0=> Home(),
+      1=> SizedBox(),
+      2=> SizedBox(),
+      3=> SizedBox(),
+      _ => SizedBox(),
+  };
+}
+
+
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 17, top: 7),
@@ -178,7 +203,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ],
-      ),
-    );
+      );
   }
 }
