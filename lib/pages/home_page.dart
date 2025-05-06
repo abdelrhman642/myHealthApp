@@ -5,12 +5,48 @@ import 'package:health_app/constan.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_containerHome.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePage extends StatefulWidget {
+  HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int index = 0;
+  final pages = [MyProfile(), MyProfile(), MyProfile()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: index,
+        onDestinationSelected: (index) => setState(() => this.index = index),
+        backgroundColor: Color(0xff375D89),
+        height: 72,
+        destinations: [
+          NavigationDestination(
+            selectedIcon: Icon(Icons.home, size: 45, color: KAppBarColor),
+            icon: Icon(Icons.home, size: 30, color: Colors.white),
+            label: 'Home',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(Icons.home, size: 45, color: KAppBarColor),
+            icon: Icon(Icons.home, size: 30, color: Colors.white),
+            label: 'Exercise',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(Icons.home, size: 45, color: KAppBarColor),
+            icon: Icon(Icons.home, size: 30, color: Colors.white),
+            label: 'Diet',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(Icons.home, size: 45, color: KAppBarColor),
+            icon: Icon(Icons.home, size: 30, color: Colors.white),
+            label: 'Utilities',
+          ),
+        ],
+      ),
       backgroundColor: Color(0xff375D89),
       appBar: AppBar(
         centerTitle: true,

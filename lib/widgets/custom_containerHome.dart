@@ -22,16 +22,19 @@ class CustomContainerhome extends StatelessWidget {
       width: 260,
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 2),
-            child: Container(height: 160, width: 255, child: imagecontainer!),
+            child: Container(
+              height: 160, width: 255, child: imagecontainer!),
           ),
           Container(
             margin: EdgeInsets.only(left: 10),
             child: Align(
               alignment: Alignment.topLeft,
               child: Text(
+                
                 textContainer!,
                 style: TextStyle(
                   fontSize: 25,
