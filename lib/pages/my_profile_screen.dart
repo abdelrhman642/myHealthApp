@@ -134,7 +134,7 @@ class MyProfile extends StatelessWidget {
                 SizedBox(height: 40),
                 CustomBottom(
                   fontSize: 35,
-                  textColor: Colors.black.withOpacity(0.71),
+                  textColor: Color(0xffEEA47F),
                   onTap: () {
                     Navigator.push(
                       context,

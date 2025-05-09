@@ -64,13 +64,7 @@ class LoginWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomBottom(
-                  onTap: () {
-
-
-
-
-
-                  },
+                  onTap: () {},
                   fontSize: 15,
                   textColor: Colors.white,
                   title: "forgot password",
@@ -79,7 +73,7 @@ class LoginWidget extends StatelessWidget {
                 SizedBox(width: 30),
                 CustomBottom(
                   fontSize: 20,
-                  
+
                   textColor: Colors.white,
                   onTap: () {
                     Navigator.push(
@@ -103,7 +97,9 @@ class LoginWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Spacer(flex: 1),
-                GestureDetector(
+                InkWell(
+                  splashColor: Color(0xffEEA47F),
+                  borderRadius: BorderRadius.circular(25),
                   onTap: () {
                     Navigator.push(
                       context,

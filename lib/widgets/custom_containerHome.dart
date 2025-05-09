@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/constan.dart';
 import 'package:health_app/pages/home_page.dart';
 
 class CustomContainerhome extends StatelessWidget {
@@ -16,8 +17,9 @@ class CustomContainerhome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap, 
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(25),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -33,18 +35,21 @@ class CustomContainerhome extends StatelessWidget {
               padding: const EdgeInsets.only(top: 2),
               child: Container(height: 160, width: 255, child: imagecontainer!),
             ),
-            Container(
-              margin: EdgeInsets.only(left: 10),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  textContainer!,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
+            InkWell(
+              splashColor: Color(KAppBarColor.value),
+              child: Container(
+                margin: EdgeInsets.only(left: 10),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Text(
+                    textContainer!,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

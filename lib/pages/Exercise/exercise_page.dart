@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Exercise/gym%20exercise.dart';
+import 'package:health_app/pages/start_screen.dart';
 import 'package:health_app/widgets/custom_exercise_container.dart';
 
 class ExercisePage extends StatelessWidget {
@@ -16,16 +18,36 @@ class ExercisePage extends StatelessWidget {
         child: ListView(
           children: [
             CustomExerciseContainer(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GymExercise()),
+                );
+              },
               image: 'assets/image/Rectangle 13.png',
               title: 'Gym',
               title2: 'exercise',
             ),
+            SizedBox(height: 20),
             CustomExerciseContainer(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StartWidget()),
+                );
+              },
               image: 'assets/image/Rectangle 15.png',
               title: 'Home',
               title2: 'exercise',
             ),
+            SizedBox(height: 20),
             CustomExerciseContainer(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StartWidget()),
+                );
+              },
               image: 'assets/image/Rectangle 14.png',
               title: 'Injuries',
               title2: 'exercise',

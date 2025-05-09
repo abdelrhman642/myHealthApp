@@ -3,8 +3,8 @@ import 'package:health_app/constan.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/%20custom_article.dart';
 
-class FitnessprogramPage extends StatelessWidget {
-  const FitnessprogramPage({super.key});
+class PhysicaldisabilitiesPage extends StatelessWidget {
+  const PhysicaldisabilitiesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,6 +43,8 @@ class FitnessprogramPage extends StatelessWidget {
         child: ListView(
           children: [
             customArticle(
+
+              textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:
                   "Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.  Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.",
@@ -51,6 +53,7 @@ class FitnessprogramPage extends StatelessWidget {
 
             SizedBox(height: 20),
             customArticle(
+              textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:
                   "Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.  Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.",
@@ -58,6 +61,7 @@ class FitnessprogramPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             customArticle(
+              textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:
                   "Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.  Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.",
@@ -65,6 +69,7 @@ class FitnessprogramPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             customArticle(
+              textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:
                   "Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.  Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.",
@@ -72,6 +77,7 @@ class FitnessprogramPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             customArticle(
+              textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:
                   "Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.  Did you know? The bacteria used to make yoghurt is called yoghurt culture and February 6th is the world frozen yoghurt day.Yoghurt is a good source of protein to help you prevent muscle breakdown, and for muscle growth.Avoid yoghurt with added sugar fat as those increase calorie intake.It is advised you take plain yoghurt instead.Plain yoghurt is also a good source of calories to help you regain your lost energy, prevent fatigue or dizziness and reduce muscle soreness.",
