@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Exercise/exercise_page.dart';
 import 'package:health_app/pages/Physicaldisabilities/BenefitsSport_page.dart';
+import 'package:health_app/pages/Utilities/utilitiesHomePage.dart';
 import 'package:health_app/pages/health&sport/Diseasesarticles_page.dart';
 import 'package:health_app/pages/Physicaldisabilities/FitnessProgram_page.dart';
 import 'package:health_app/pages/Tips/FitnessTips_page.dart';
@@ -130,7 +131,7 @@ Widget getPages(index) {
     0 => Home(),
     1 => ExercisePage(),
     2 => SizedBox(),
-    3 => SizedBox(),
+    3 => Utilitieshomepage(),
     _ => SizedBox(),
   };
 }
