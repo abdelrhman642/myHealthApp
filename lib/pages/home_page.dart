@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Diet/DietHome_page.dart';
 import 'package:health_app/pages/Exercise/exercise_page.dart';
 import 'package:health_app/pages/Physicaldisabilities/BenefitsSport_page.dart';
 import 'package:health_app/pages/Utilities/utilitiesHomePage.dart';
@@ -130,7 +131,7 @@ Widget getPages(index) {
   return switch (index) {
     0 => Home(),
     1 => ExercisePage(),
-    2 => SizedBox(),
+    2 => DietHome(),
     3 => Utilitieshomepage(),
     _ => SizedBox(),
   };

@@ -17,7 +17,7 @@ class CustomUtilitiesContainer extends StatelessWidget {
     double hight = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () {},
+      onTap: onTap,
       splashColor: Color(KAppBarColor.value),
 
       child: Container(

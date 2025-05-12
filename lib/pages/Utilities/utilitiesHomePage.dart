@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Utilities/WaterCalculator/WaterCalculator.dart';
+import 'package:health_app/pages/Utilities/proteinCalculator/proteinCalculator_page.dart';
 import 'package:health_app/widgets/custom_UtilitiesContainer.dart';
 
 class Utilitieshomepage extends StatelessWidget {
@@ -25,7 +27,14 @@ class Utilitieshomepage extends StatelessWidget {
                 CustomUtilitiesContainer(
                   image: 'assets/image/fluent-emoji_cut-of-meat.png',
                   text: '  protein\nCalculator',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProteinCalculator(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
@@ -37,7 +46,14 @@ class Utilitieshomepage extends StatelessWidget {
                   image: 'assets/image/material-symbols_water-medium.png',
                   text: '    Water\n Calculate',
 
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Watercalculator(),
+                      ),
+                    );
+                  },
                 ),
                 CustomUtilitiesContainer(
                   image: 'assets/image/fluent-mdl2_calories.png',
