@@ -43,7 +43,6 @@ class PhysicaldisabilitiesPage extends StatelessWidget {
         child: ListView(
           children: [
             customArticle(
-
               textcolor: Color(0xffA90707),
               maincontainerText: " Yoghurt as a Good Source of Calories :",
               containerText:

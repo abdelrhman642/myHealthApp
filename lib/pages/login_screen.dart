@@ -68,7 +68,7 @@ class LoginWidget extends StatelessWidget {
                   fontSize: 15,
                   textColor: Colors.white,
                   title: "forgot password",
-                  colorsIcon: Color(0xff9F9C9C9C).withOpacity(0.61),
+                  colorsIcon: Color(0xff9f9c9c9c).withOpacity(0.61),
                 ),
                 SizedBox(width: 30),
                 CustomBottom(

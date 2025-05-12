@@ -10,7 +10,7 @@ class EditProfile extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
-         mainAxisSize: MainAxisSize.max,
+          mainAxisSize: MainAxisSize.max,
           children: [
             Align(
               alignment: Alignment.topLeft,
@@ -65,7 +65,7 @@ class EditProfile extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-      
+
               margin: EdgeInsets.only(top: 23),
               decoration: BoxDecoration(
                 color: Color(0xff6A6A6A).withOpacity(0.5),
@@ -116,7 +116,7 @@ class EditProfile extends StatelessWidget {
                         ),
                       ],
                     ),
-      
+
                     Divider(indent: 20, endIndent: 20, color: Colors.white),
                     Column(
                       children: [
@@ -157,7 +157,7 @@ class EditProfile extends StatelessWidget {
                         ),
                       ],
                     ),
-      
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -183,9 +183,9 @@ class EditProfile extends StatelessWidget {
                 ),
               ),
             ),
-          Spacer(),
+            Spacer(),
 
-        Align(
+            Align(
               alignment: Alignment.bottomRight,
               child: Container(
                 height: 60,
@@ -194,7 +194,7 @@ class EditProfile extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Color(0xff009FF9),
                 ),
-      
+
                 child: Padding(
                   padding: const EdgeInsets.all(8),
                   child: Image.asset(
@@ -206,7 +206,6 @@ class EditProfile extends StatelessWidget {
                 ),
               ),
             ),
-          
           ],
         ),
       ),

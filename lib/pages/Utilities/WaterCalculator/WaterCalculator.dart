@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Utilities/WaterCalculator/waterResult_pagr.dart';
@@ -11,8 +13,9 @@ class Watercalculator extends StatefulWidget {
 }
 
 class _WatercalculatorState extends State<Watercalculator> {
-  int weight = 50;
-  int exercise = 60;
+  List<int> values = [50, 60];
+  Timer? _timer;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,19 +72,8 @@ class _WatercalculatorState extends State<Watercalculator> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          weight--;
-                        });
-                      },
-                      icon: Icon(
-                        size: 40,
-                        color: Color(0xff990011),
-                        Icons.remove_circle_outline,
-                      ),
-                    ),
-                    Text(weight.toString(), style: TextStyle(fontSize: 25)),
+                    _buildIcon(0, false),
+                    Text(values[0].toString(), style: TextStyle(fontSize: 25)),
                     Text(
                       '  kg',
                       style: TextStyle(
@@ -90,18 +82,8 @@ class _WatercalculatorState extends State<Watercalculator> {
                         fontFamily: 'KottaOne',
                       ),
                     ),
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          weight++;
-                        });
-                      },
-                      icon: Icon(
-                        size: 40,
-                        color: Color(0xff990011),
-                        Icons.add_circle_outline,
-                      ),
-                    ),
+
+                    _buildIcon(0, true),
                   ],
                 ),
               ],
@@ -130,20 +112,8 @@ class _WatercalculatorState extends State<Watercalculator> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          exercise--;
-                          print(exercise);
-                        });
-                      },
-                      icon: Icon(
-                        size: 40,
-                        color: Color(0xff990011),
-                        Icons.remove_circle_outline,
-                      ),
-                    ),
-                    Text(exercise.toString(), style: TextStyle(fontSize: 25)),
+                    _buildIcon(1, false),
+                    Text(values[1].toString(), style: TextStyle(fontSize: 25)),
                     Text(
                       '  M',
                       style: TextStyle(
@@ -152,18 +122,7 @@ class _WatercalculatorState extends State<Watercalculator> {
                         fontFamily: 'KottaOne',
                       ),
                     ),
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          exercise++;
-                        });
-                      },
-                      icon: Icon(
-                        size: 40,
-                        color: Color(0xff990011),
-                        Icons.add_circle_outline,
-                      ),
-                    ),
+                    _buildIcon(1, true),
                   ],
                 ),
               ],
@@ -171,7 +130,7 @@ class _WatercalculatorState extends State<Watercalculator> {
           ),
           ElevatedButton(
             onPressed: () {
-              var result = ((exercise * 0.0008 * weight));
+              var result = ((values[1] * 0.0008 * values[0]));
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -193,6 +152,44 @@ class _WatercalculatorState extends State<Watercalculator> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  _buildIcon(int index, [bool isAdd = true]) {
+    final icon = isAdd ? Icons.add_circle_outline : Icons.remove_circle_outline;
+    void onTap() {
+      if (!isAdd && values[index] <= 0) {
+        return;
+      }
+
+      if (isAdd) {
+        setState(() {
+          values[index] = values[index] + 1;
+        });
+      } else {
+        setState(() {
+          values[index] = values[index] - 1;
+        });
+      }
+    }
+
+    return GestureDetector(
+      onLongPress: () {
+        _timer = Timer.periodic(Duration(milliseconds: 100), (_) {
+          setState(() {
+            onTap.call();
+          });
+        });
+      },
+      onLongPressEnd: (_) {
+        _timer?.cancel();
+      },
+
+      onTap: onTap,
+      child: IconButton(
+        onPressed: null,
+        icon: Icon(size: 40, color: Color(0xff990011), icon),
       ),
     );
   }

@@ -12,7 +12,7 @@ class CustomTextfild extends StatelessWidget {
       style: const TextStyle(color: Colors.white, fontSize: 20),
       decoration: InputDecoration(
         filled: true,
-        fillColor: const Color(0xff9F9C9C9C).withOpacity(0.61),
+        fillColor: const Color(0xff9f9c9c9c).withOpacity(0.61),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
         hintText: hintText,
         hintStyle: const TextStyle(

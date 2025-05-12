@@ -17,11 +17,16 @@ class CustomUtilitiesContainer extends StatelessWidget {
     double hight = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
+      borderRadius: BorderRadius.circular(25),
       onTap: onTap,
       splashColor: Color(KAppBarColor.value),
 
       child: Container(
-        color: Color(0xffFCF6F5),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(25),
+        ),
+
         height: 200,
         width: width * 0.41,
         child: Column(

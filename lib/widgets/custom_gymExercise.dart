@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 
 class CustomGymexercise extends StatelessWidget {
-  CustomGymexercise({
+  const CustomGymexercise({
     this.image,
     required this.onTap,
     required this.title,

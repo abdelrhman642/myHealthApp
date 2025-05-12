@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/my_profile_screen.dart';
-import 'package:health_app/pages/start_screen.dart';
 
 class ExerciseContainer extends StatelessWidget {
   const ExerciseContainer({

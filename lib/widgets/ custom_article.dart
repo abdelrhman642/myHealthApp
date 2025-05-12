@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class customArticle extends StatelessWidget {
-  customArticle({
+  const customArticle({
     required this.textcolor,
     required this.containerimage,
     required this.containerText,

@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
@@ -18,7 +17,7 @@ import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_containerHome.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -32,6 +31,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
+        labelTextStyle: WidgetStatePropertyAll(TextStyle(color: Colors.white)),
         indicatorColor: Colors.white.withOpacity(0.0),
         selectedIndex: index,
         onDestinationSelected: (index) => setState(() => this.index = index),
@@ -46,20 +46,20 @@ class _HomePageState extends State<HomePage> {
               height: 50,
               color: KAppBarColor,
             ),
-            icon: Image.asset('assets/image/image.png', width: 40, height: 40),
+            icon: Image.asset('assets/image/image.png', width: 50, height: 50),
             label: 'Home',
           ),
           NavigationDestination(
             selectedIcon: Image.asset(
               'assets/image/image copy.png',
-              width: 85,
-              height: 85,
+              width: 50,
+              height: 50,
               color: KAppBarColor,
             ),
             icon: Image.asset(
               'assets/image/image copy.png',
-              width: 75,
-              height: 75,
+              width: 50,
+              height: 50,
             ),
             label: 'Exercise',
           ),
@@ -72,8 +72,8 @@ class _HomePageState extends State<HomePage> {
             ),
             icon: Image.asset(
               'assets/image/image copy 2.png',
-              width: 40,
-              height: 40,
+              width: 50,
+              height: 50,
             ),
             label: 'Diet',
           ),
@@ -86,8 +86,8 @@ class _HomePageState extends State<HomePage> {
             ),
             icon: Image.asset(
               'assets/image/image copy 3.png',
-              width: 40,
-              height: 40,
+              width: 50,
+              height: 50,
               color: Colors.white,
             ),
             label: 'Utilities',

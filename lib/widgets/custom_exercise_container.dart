@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 
 class CustomExerciseContainer extends StatelessWidget {
-  CustomExerciseContainer({
+  const CustomExerciseContainer({
     this.image,
     required this.onTap,
     required this.title,

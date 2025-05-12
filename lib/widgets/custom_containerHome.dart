@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/home_page.dart';
 
 class CustomContainerhome extends StatelessWidget {
   const CustomContainerhome({
@@ -33,7 +32,7 @@ class CustomContainerhome extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 2),
-              child: Container(height: 160, width: 255, child: imagecontainer!),
+              child: SizedBox(height: 160, width: 255, child: imagecontainer!),
             ),
             InkWell(
               splashColor: Color(KAppBarColor.value),
