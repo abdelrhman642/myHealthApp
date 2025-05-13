@@ -3,8 +3,8 @@ import 'package:health_app/constan.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/coustom_containrtDiet.dart';
 
-class MediumCaloriesPage extends StatelessWidget {
-  const MediumCaloriesPage({super.key});
+class HighcaloriesPage extends StatelessWidget {
+  const  HighcaloriesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class MediumCaloriesPage extends StatelessWidget {
           ),
         ],
         title: Text(
-          'Medium calories diet',
+          'High calories diet',
           style: TextStyle(
             color: Colors.white,
             fontFamily: 'KottaOne',
@@ -96,11 +96,11 @@ class MediumCaloriesPage extends StatelessWidget {
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 16.png',
-                    name: 'Apple',
-                    value1: '0.4',
-                    value2: '0.2g',
-                    value3: '19g',
+                    customImage: 'assets/image/image copy 18.png',
+                    name: 'Cucumber',
+                    value1: '52g',
+                    value2: '8g',
+                    value3: '1g',
                     finalGram: '170g',
                     finalCalories: '316g',
                   ),
@@ -134,13 +134,13 @@ class MediumCaloriesPage extends StatelessWidget {
               child: Column(
                 children: [
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 20.png',
-                    name: 'Dates',
-                    value1: '4g',
-                    value2: '1g',
-                    value3: '114g',
-                    finalGram: '170g',
-                    finalCalories: '479cal',
+                    customImage: 'assets/image/image copy 19.png',
+                    name: 'Orange',
+                    value1: '15g',
+                    value2: '0.2g',
+                    value3: '1.2g',
+                    finalGram: '130g',
+                    finalCalories: '61.6cal',
                   ),
                 ],
               ),
@@ -192,13 +192,13 @@ class MediumCaloriesPage extends StatelessWidget {
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 21.png',
-                    name: 'Rice',
-                    value1: '7g',
-                    value2: '1g',
-                    value3: '70g',
-                    finalGram: '250g',
-                    finalCalories: '325cal',
+                    customImage: 'assets/image/image copy 13.png',
+                    name: 'Bread',
+                    value1: '7.2g',
+                    value2: '1.8g',
+                    value3: '23g',
+                    finalGram: '48g',
+                    finalCalories: '140 cal',
                   ),
                 ],
               ),
@@ -247,26 +247,6 @@ class MediumCaloriesPage extends StatelessWidget {
                     value3: '20g',
                     finalGram: '180g',
                     finalCalories: '386 cal',
-                  ),
-                  Divider(color: Colors.black),
-                  CustomContainerDiet(
-                    customImage: 'assets/image/image copy 13.png',
-                    name: 'Bread',
-                    value1: '7.2g',
-                    value2: '1.8g',
-                    value3: '23g',
-                    finalGram: '48g',
-                    finalCalories: '140 cal',
-                  ),
-                  Divider(color: Colors.black),
-                  CustomContainerDiet(
-                    customImage: 'assets/image/image copy 22.png',
-                    name: 'Beans',
-                    value1: '28g',
-                    value2: '15g',
-                    value3: '17g',
-                    finalGram: '172g',
-                    finalCalories: '296.6cal',
                   ),
                 ],
               ),
