@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/my_profile_screen.dart';
 
 class CustomContainerdiet extends StatelessWidget {
   const CustomContainerdiet({
@@ -9,7 +10,7 @@ class CustomContainerdiet extends StatelessWidget {
     required this.value1,
     required this.value2,
     required this.value3,
-    required this.onTap,
+     required this.onTap, 
   });
   final String name;
   final String title;
@@ -21,9 +22,10 @@ class CustomContainerdiet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      
       splashColor: Color(KAppBarColor.value),
       borderRadius: BorderRadius.circular(25),
-
+      
       onTap: onTap,
       child: Container(
         width: double.infinity,
@@ -41,7 +43,7 @@ class CustomContainerdiet extends StatelessWidget {
               Align(
                 alignment: Alignment.topLeft,
                 child: Text(
-                  name,
+                  name!,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
@@ -53,7 +55,7 @@ class CustomContainerdiet extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    title,
+                    title!,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Color(0xff990011),
@@ -79,7 +81,7 @@ class CustomContainerdiet extends StatelessWidget {
                         style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value1,
+                        value1!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',
@@ -95,7 +97,7 @@ class CustomContainerdiet extends StatelessWidget {
                         style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value2,
+                        value2!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',
@@ -111,7 +113,7 @@ class CustomContainerdiet extends StatelessWidget {
                         style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value3,
+                        value3!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',

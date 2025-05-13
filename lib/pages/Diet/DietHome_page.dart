@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Diet/Low%20calories_page.dart';
+import 'package:health_app/pages/Diet/Medium%20calories_page.dart';
 import 'package:health_app/pages/start_screen.dart';
 import 'package:health_app/widgets/custom_containerDiet.dart';
 
@@ -31,7 +32,7 @@ class DietHome extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => StartWidget()),
+                MaterialPageRoute(builder: (context) => MediumCaloriesPage()),
               );
             },
             name: 'Medium calories diet',
