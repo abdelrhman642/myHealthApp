@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Utilities/proteinCalculator/proteinResuit_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
+import 'package:health_app/widgets/custom_AppBar.dart';
 
 class ProteinCalculator extends StatefulWidget {
   const ProteinCalculator({super.key});
@@ -25,34 +26,7 @@ class _ProteinCalculatorState extends State<ProteinCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white, size: 50),
-        backgroundColor: KAppBarColor,
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyProfile()),
-                );
-              },
-              icon: Icon(Icons.account_circle, color: Colors.white, size: 40),
-            ),
-          ),
-        ],
-        title: Text(
-          'protein Calculator',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'KottaOne',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
+      appBar: CustomAppbar(text: 'protein Calculator'),
       backgroundColor: KbackroundColor,
       body: ListView(
         padding: const EdgeInsets.only(top: 20),

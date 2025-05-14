@@ -5,6 +5,7 @@ import 'package:health_app/pages/Exercise/Shoulder/Shoulder_page.dart';
 import 'package:health_app/pages/Exercise/back/Back_page.dart';
 import 'package:health_app/pages/Exercise/chest/Chest_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
+import 'package:health_app/widgets/custom_AppBar.dart';
 import 'package:health_app/widgets/custom_gymExercise.dart';
 
 class Injuriesexercise extends StatelessWidget {
@@ -13,34 +14,7 @@ class Injuriesexercise extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white, size: 50),
-        backgroundColor: KAppBarColor,
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyProfile()),
-                );
-              },
-              icon: Icon(Icons.account_circle, color: Colors.white, size: 40),
-            ),
-          ),
-        ],
-        title: Text(
-          'Injuries exercise',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'KottaOne',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
+      appBar: CustomAppbar(text: 'Injuries exercise'),
       backgroundColor: KbackroundColor,
       body: Padding(
         padding: const EdgeInsets.only(top: 20, bottom: 20),

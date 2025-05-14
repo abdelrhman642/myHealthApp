@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Utilities/Calories%20Calculator/CaloriesResuit_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
+import 'package:health_app/widgets/custom_AppBar.dart';
 
 class Caloriescalculator extends StatefulWidget {
   const Caloriescalculator({super.key});
@@ -29,34 +30,7 @@ class _CaloriescalculatorState extends State<Caloriescalculator> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white, size: 50),
-        backgroundColor: KAppBarColor,
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyProfile()),
-                );
-              },
-              icon: Icon(Icons.account_circle, color: Colors.white, size: 40),
-            ),
-          ),
-        ],
-        title: Text(
-          'Calories  Calculator',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'KottaOne',
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
+      appBar:CustomAppbar(text: 'Calories Calculator'),
       body: ListView(
         children: [
           Column(

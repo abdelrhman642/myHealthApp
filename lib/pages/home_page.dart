@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Diet/DietHome_page.dart';
@@ -14,6 +13,7 @@ import 'package:health_app/pages/Physicaldisabilities/SocialContact_page.dart';
 import 'package:health_app/pages/Tips/diet_tips_page.dart';
 
 import 'package:health_app/pages/my_profile_screen.dart';
+import 'package:health_app/widgets/custom_AppBar.dart';
 import 'package:health_app/widgets/custom_containerHome.dart';
 
 class HomePage extends StatefulWidget {
@@ -95,33 +95,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       backgroundColor: KbackroundColor,
-      appBar: AppBar(
-        centerTitle: true,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyProfile()),
-                );
-              },
-              icon: Icon(Icons.account_circle, color: Colors.white, size: 40),
-            ),
-          ),
-        ],
-        backgroundColor: KAppBarColor,
-        title: Text(
-          getTitle(index),
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.white,
-            fontFamily: 'KottaOne',
-          ),
-        ),
-        leading: Icon(Icons.more_vert, color: Colors.white, size: 40),
-      ),
+      appBar: CustomAppbar(text: getTitle(index)),
       body: getPages(index),
     );
   }
