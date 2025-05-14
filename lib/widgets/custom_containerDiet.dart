@@ -10,7 +10,7 @@ class CustomContainerdiet extends StatelessWidget {
     required this.value1,
     required this.value2,
     required this.value3,
-     required this.onTap, 
+    required this.onTap,
   });
   final String name;
   final String title;
@@ -22,16 +22,15 @@ class CustomContainerdiet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      
       splashColor: Color(KAppBarColor.value),
       borderRadius: BorderRadius.circular(25),
-      
+
       onTap: onTap,
       child: Container(
         width: double.infinity,
         margin: EdgeInsets.only(top: 25, left: 10, right: 10),
         decoration: BoxDecoration(
-          color: Color(0xffD9D9D9),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(25),
         ),
         child: Padding(

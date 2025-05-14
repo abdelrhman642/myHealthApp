@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/Exercise/Back_page.dart';
+import 'package:health_app/pages/Exercise/back/Back_page.dart';
 import 'package:health_app/pages/Exercise/Chest_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_gymExercise.dart';

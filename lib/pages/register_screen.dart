@@ -18,29 +18,33 @@ class RegisterWidget extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: 450),
             CustomTextfild(
+              obscureText: false,
               hintText: 'Name',
               prefixIcon: Icons.person,
               colorsIcon: Color(0xff000C7B),
             ),
             SizedBox(height: 6),
             CustomTextfild(
+              obscureText: false,
               hintText: 'Email',
               prefixIcon: Icons.email,
               colorsIcon: Color(0xff000C7B),
             ),
             SizedBox(height: 6),
             CustomTextfild(
+              obscureText: true,
               hintText: 'Password',
               prefixIcon: Icons.key,
               colorsIcon: Color(0xff000C7B),
             ),
             SizedBox(height: 6),
             CustomTextfild(
+              obscureText: true,
               hintText: 'Confirm Password',
               prefixIcon: Icons.key,
               colorsIcon: Color(0xff000C7B),

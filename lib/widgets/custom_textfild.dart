@@ -1,22 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/constan.dart';
 
 class CustomTextfild extends StatelessWidget {
-  CustomTextfild({this.colorsIcon, this.prefixIcon, this.hintText, super.key});
-  String? hintText;
-  IconData? prefixIcon;
-  Color? colorsIcon;
+  CustomTextfild({
+    required this.obscureText,
+    required this.colorsIcon,
+    required this.prefixIcon,
+    required this.hintText,
+
+    super.key,
+  });
+  final String? hintText;
+  final IconData? prefixIcon;
+  final Color? colorsIcon;
+  final bool? obscureText;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: const TextStyle(color: Colors.white, fontSize: 20),
+      obscureText: obscureText ?? false,
+      obscuringCharacter: '*',
+      style: const TextStyle(color: Colors.white, fontSize: 25),
       decoration: InputDecoration(
         filled: true,
         fillColor: const Color(0xff9f9c9c9c).withOpacity(0.61),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
         hintText: hintText,
         hintStyle: const TextStyle(
-          color: Colors.white,
+          color: KAppBarColor,
           fontSize: 20,
           fontWeight: FontWeight.w300,
         ),

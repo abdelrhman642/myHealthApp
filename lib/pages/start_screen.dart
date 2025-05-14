@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/constan.dart';
 import 'package:health_app/pages/login_screen.dart';
 
 class StartWidget extends StatelessWidget {
@@ -62,7 +63,7 @@ class StartWidget extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
-                    foregroundColor: Colors.white,
+                    foregroundColor: KAppBarColor,
                   ),
                   icon: Icon(Icons.play_arrow, size: 40),
                   label: Text(

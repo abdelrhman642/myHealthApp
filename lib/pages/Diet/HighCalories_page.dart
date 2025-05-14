@@ -4,7 +4,7 @@ import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/coustom_containrtDiet.dart';
 
 class HighcaloriesPage extends StatelessWidget {
-  const  HighcaloriesPage({super.key});
+  const HighcaloriesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -66,43 +66,33 @@ class HighcaloriesPage extends StatelessWidget {
               child: Column(
                 children: [
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 11.png',
-                    name: 'Egg',
-                    value1: '6.3g',
-                    value2: '5g',
-                    value3: '0.4g',
-                    finalGram: '50g',
-                    finalCalories: '71.5 cal',
+                    customImage: 'assets/image/image copy 26.png',
+                    name: 'Oatmeal pancake',
+                    value1: '14g',
+                    value2: '20g',
+                    value3: '28g',
+                    finalGram: '200g',
+                    finalCalories: '386 cal',
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 12.png',
-                    name: 'Veta Cheese',
-                    value1: '8g',
-                    value2: '12g',
-                    value3: '2.2g',
-                    finalGram: '48g',
-                    finalCalories: '148 cal',
-                  ),
-                  Divider(color: Colors.black),
-                  CustomContainerDiet(
-                    customImage: 'assets/image/image copy 13.png',
-                    name: 'Bread',
+                    customImage: 'assets/image/image copy 25.png',
+                    name: 'Dates',
                     value1: '4g',
-                    value2: '0.6g',
-                    value3: '21g',
-                    finalGram: '600g',
-                    finalCalories: '90cal',
+                    value2: '1g',
+                    value3: '114g',
+                    finalGram: '170g',
+                    finalCalories: '479 cal',
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 18.png',
-                    name: 'Cucumber',
-                    value1: '52g',
-                    value2: '8g',
-                    value3: '1g',
-                    finalGram: '170g',
-                    finalCalories: '316g',
+                    customImage: 'assets/image/image copy 23.png',
+                    name: 'Greek yogurt',
+                    value1: '19g',
+                    value2: '3g',
+                    value3: '7g',
+                    finalGram: '180g',
+                    finalCalories: '139cal',
                   ),
                 ],
               ),
@@ -114,7 +104,7 @@ class HighcaloriesPage extends StatelessWidget {
               children: [
                 Image.asset('assets/image/image copy 8.png', width: 30),
                 Text(
-                  ' Snacks',
+                  ' After Breakfast',
                   style: TextStyle(
                     color: Color(0xffEEA47F),
                     fontSize: 25,
@@ -134,13 +124,23 @@ class HighcaloriesPage extends StatelessWidget {
               child: Column(
                 children: [
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 19.png',
-                    name: 'Orange',
-                    value1: '15g',
-                    value2: '0.2g',
-                    value3: '1.2g',
-                    finalGram: '130g',
-                    finalCalories: '61.6cal',
+                    customImage: 'assets/image/image copy 26.png',
+                    name: 'Oatmeal pancake',
+                    value1: '14g',
+                    value2: '20g',
+                    value3: '28g',
+                    finalGram: '200g',
+                    finalCalories: '386 cal',
+                  ),
+                  Divider(color: Colors.black),
+                  CustomContainerDiet(
+                    customImage: 'assets/image/image copy 27.png',
+                    name: 'Boiled potatoes',
+                    value1: '4g',
+                    value2: '0g',
+                    value3: '45g',
+                    finalGram: '250g',
+                    finalCalories: '215cal',
                   ),
                 ],
               ),
@@ -172,38 +172,88 @@ class HighcaloriesPage extends StatelessWidget {
               child: Column(
                 children: [
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 14.png',
-                    name: 'Grilled Chicken',
-                    value1: '52g',
-                    value2: '8g',
-                    value3: '1g',
-                    finalGram: '170g',
-                    finalCalories: '316g',
-                  ),
-                  Divider(color: Colors.black),
-                  CustomContainerDiet(
-                    customImage: 'assets/image/image copy 15.png',
-                    name: 'Salad',
-                    value1: '2g',
+                    customImage: 'assets/image/image copy 28.png',
+                    name: 'Grilled tilapia',
+                    value1: '44g',
                     value2: '3g',
-                    value3: '9g',
-                    finalGram: '200g',
-                    finalCalories: '80cal',
+                    value3: '0g',
+                    finalGram: '170g',
+                    finalCalories: '218g',
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 13.png',
-                    name: 'Bread',
-                    value1: '7.2g',
-                    value2: '1.8g',
-                    value3: '23g',
-                    finalGram: '48g',
-                    finalCalories: '140 cal',
+                    customImage: 'assets/image/image copy 21.png',
+                    name: 'Rice',
+                    value1: '7g',
+                    value2: '1g',
+                    value3: '70g',
+                    finalGram: '250g',
+                    finalCalories: '325cal',
+                  ),
+                  Divider(color: Colors.black),
+                  CustomContainerDiet(
+                    customImage: 'assets/image/image copy 27.png',
+                    name: 'Boiled potatoes',
+                    value1: '4g',
+                    value2: '0g',
+                    value3: '45g',
+                    finalGram: '250g',
+                    finalCalories: '215cal',
+                  ),
+                  Divider(color: Colors.black),
+                  CustomContainerDiet(
+                    customImage: 'assets/image/image copy 29.png',
+                    name: 'Almond',
+                    value1: '6g',
+                    value2: '15g',
+                    value3: '6g',
+                    finalGram: '30g',
+                    finalCalories: '173cal',
                   ),
                 ],
               ),
             ),
           ),
+
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Image.asset('assets/image/image copy 8.png', width: 30),
+                Text(
+                  ' After Lunch',
+                  style: TextStyle(
+                    color: Color(0xffEEA47F),
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 12, right: 12),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: Column(
+                children: [
+                  CustomContainerDiet(
+                    customImage: 'assets/image/image copy 27.png',
+                    name: 'Boiled potatoes',
+                    value1: '4g',
+                    value2: '0g',
+                    value3: '45g',
+                    finalGram: '250g',
+                    finalCalories: '215cal',
+                  ),
+                ],
+              ),
+            ),
+          ),
+
           Padding(
             padding: const EdgeInsets.all(16),
             child: Row(
@@ -230,23 +280,33 @@ class HighcaloriesPage extends StatelessWidget {
               child: Column(
                 children: [
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 16.png',
-                    name: 'Apple',
-                    value1: '0.5g',
-                    value2: '0.2g',
+                    customImage: 'assets/image/image copy 26.png',
+                    name: 'Oatmeal pancake',
+                    value1: '14g',
+                    value2: '20g',
                     value3: '28g',
-                    finalGram: '138g',
-                    finalCalories: '71.8 cal',
+                    finalGram: '200g',
+                    finalCalories: '386 cal',
                   ),
                   Divider(color: Colors.black),
                   CustomContainerDiet(
-                    customImage: 'assets/image/image copy 17.png',
-                    name: 'Yogurt',
-                    value1: '14g',
-                    value2: '14g',
-                    value3: '20g',
-                    finalGram: '180g',
-                    finalCalories: '386 cal',
+                    customImage: 'assets/image/image copy 25.png',
+                    name: 'Dates',
+                    value1: '4g',
+                    value2: '1g',
+                    value3: '114g',
+                    finalGram: '170g',
+                    finalCalories: '479 cal',
+                  ),
+                  Divider(color: Colors.black),
+                  CustomContainerDiet(
+                    customImage: 'assets/image/image copy 23.png',
+                    name: 'cottage cheese (low-fat)',
+                    value1: '19g',
+                    value2: '3g',
+                    value3: '7g',
+                    finalGram: '250g',
+                    finalCalories: '180cal',
                   ),
                 ],
               ),

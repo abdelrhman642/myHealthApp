@@ -218,7 +218,8 @@ class _ProteinCalculatorState extends State<ProteinCalculator> {
                       ),
                     ],
                   );
-                }),
+                },
+                ),
               ],
             ),
           ),

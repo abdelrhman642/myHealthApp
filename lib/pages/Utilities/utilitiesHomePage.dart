@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Utilities/Calories%20Calculator/CaloriesCalculator_page.dart';
 import 'package:health_app/pages/Utilities/WaterCalculator/WaterCalculator.dart';
 import 'package:health_app/pages/Utilities/proteinCalculator/proteinCalculator_page.dart';
 import 'package:health_app/widgets/custom_UtilitiesContainer.dart';
@@ -58,7 +59,14 @@ class Utilitieshomepage extends StatelessWidget {
                 CustomUtilitiesContainer(
                   image: 'assets/image/fluent-mdl2_calories.png',
                   text: '  Calories\nCalculator',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Caloriescalculator(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
