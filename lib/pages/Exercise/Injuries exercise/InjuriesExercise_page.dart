@@ -7,8 +7,8 @@ import 'package:health_app/pages/Exercise/chest/Chest_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_gymExercise.dart';
 
-class HomeexercisePage extends StatelessWidget {
-  const HomeexercisePage({super.key});
+class Injuriesexercise extends StatelessWidget {
+  const Injuriesexercise({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class HomeexercisePage extends StatelessWidget {
           ),
         ],
         title: Text(
-          'Home Exercise',
+          'Injuries exercise',
           style: TextStyle(
             color: Colors.white,
             fontFamily: 'KottaOne',
@@ -56,8 +56,8 @@ class HomeexercisePage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => ChestPage()),
                     );
                   },
-                  image: 'assets/image/image copy 38.png',
-                  title: 'CHEST',
+                  image: 'assets/image/image copy 46.png',
+                  title: 'Low back',
                 ),
 
                 CustomGymexercise(
@@ -67,8 +67,8 @@ class HomeexercisePage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => BackPage()),
                     );
                   },
-                  image: 'assets/image/image copy 39.png',
-                  title: 'BACK',
+                  image: 'assets/image/image copy 47.png',
+                  title: 'ANKLE',
                 ),
               ],
             ),
@@ -78,60 +78,35 @@ class HomeexercisePage extends StatelessWidget {
               children: [
                 CustomGymexercise(
                   onTap: () {},
-                  image: 'assets/image/image copy 40.png',
-                  title: 'BICEPS',
+                  image: 'assets/image/image copy 48.png',
+                  title: 'KNEE',
                 ),
 
                 CustomGymexercise(
                   onTap: () {},
-                  image: 'assets/image/image copy 41.png',
-                  title: 'TRICEPS',
+                  image: 'assets/image/image copy 49.png',
+                  title: 'NECK',
                 ),
               ],
             ),
             SizedBox(height: 25),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomGymexercise(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => LegPage()),
-                    );
-                  },
-                  image: 'assets/image/image copy 42.png',
-                  title: 'LEG',
-                ),
-
-                CustomGymexercise(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ShoulderPage()),
-                    );
-                  },
-                  image: 'assets/image/image copy 43.png',
-                  title: 'SHOULDER',
-                ),
-              ],
-            ),
-            SizedBox(height: 25),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomGymexercise(
-                  onTap: () {},
-                  image: 'assets/image/image copy 44.png',
-                  title: 'ABS',
-                ),
-
-                CustomGymexercise(
-                  onTap: () {},
-                  image: 'assets/image/image copy 45.png',
-                  title: 'CARDIO',
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CustomGymexercise(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LegPage()),
+                      );
+                    },
+                    image: 'assets/image/image copy 50.png',
+                    title: 'SHOULDER',
+                  ),
+                ],
+              ),
             ),
           ],
         ),

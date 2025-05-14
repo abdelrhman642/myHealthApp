@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Exercise/Home%20exercise/HomeExercise_page.dart';
+import 'package:health_app/pages/Exercise/Injuries%20exercise/InjuriesExercise_page.dart';
 import 'package:health_app/pages/Exercise/gym%20exercise.dart';
 import 'package:health_app/pages/start_screen.dart';
 import 'package:health_app/widgets/custom_exercise_container.dart';
@@ -32,7 +33,7 @@ class ExercisePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => StartWidget()),
+                  MaterialPageRoute(builder: (context) => HomeexercisePage()),
                 );
               },
               image: 'assets/image/Rectangle 15.png',
@@ -44,7 +45,7 @@ class ExercisePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => StartWidget()),
+                  MaterialPageRoute(builder: (context) => Injuriesexercise()),
                 );
               },
               image: 'assets/image/Rectangle 14.png',
