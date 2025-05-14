@@ -103,7 +103,7 @@ class _CaloriescalculatorState extends State<Caloriescalculator> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
-                            'assets/image/image copy 6.png',
+                            'assets/image/image copy 30.png',
                             height: 100,
                             width: 100,
                           ),

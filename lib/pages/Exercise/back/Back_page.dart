@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/Exercise/Trapezius_page.dart';
+import 'package:health_app/pages/Exercise/back/LowerBack_page.dart';
+import 'package:health_app/pages/Exercise/back/Trapezius_page.dart';
+import 'package:health_app/pages/Exercise/back/UpperBack_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/customExerciseContainer.dart';
 
@@ -56,7 +58,7 @@ class BackPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TrapeziusPage()),
+                MaterialPageRoute(builder: (context) => Lowerback()),
               );
             },
             title: 'Lower back',
@@ -67,7 +69,7 @@ class BackPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TrapeziusPage()),
+                MaterialPageRoute(builder: (context) => Upperback()),
               );
             },
             title: 'Upper back',

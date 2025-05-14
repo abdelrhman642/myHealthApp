@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/Exercise/Trapezius_page.dart';
+import 'package:health_app/pages/Exercise/back/Trapezius_page.dart';
+import 'package:health_app/pages/Exercise/chest/LowerChest_page.dart';
+import 'package:health_app/pages/Exercise/chest/UpperChest_page.dart';
+import 'package:health_app/pages/Exercise/chest/middleChest_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/customExerciseContainer.dart';
 
@@ -39,13 +42,13 @@ class ChestPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
           ExerciseContainer(
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TrapeziusPage()),
+                MaterialPageRoute(builder: (context) => Middlechest()),
               );
             },
             title: 'Middle chest',
@@ -56,22 +59,22 @@ class ChestPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TrapeziusPage()),
+                MaterialPageRoute(builder: (context) => LowerChest()),
               );
             },
-            title: 'Middle chest ',
-            image: 'assets/image/Rectangle 195 (1).png',
+            title: 'Lower chest ',
+            image: 'assets/image/image copy 31.png',
           ),
           Divider(),
           ExerciseContainer(
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TrapeziusPage()),
+                MaterialPageRoute(builder: (context) => UpperChest()),
               );
             },
             title: 'Upper chest',
-            image: 'assets/image/Rectangle 196 (1).png',
+            image: 'assets/image/image copy 32.png',
           ),
         ],
       ),

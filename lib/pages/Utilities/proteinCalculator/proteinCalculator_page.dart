@@ -97,7 +97,7 @@ class _ProteinCalculatorState extends State<ProteinCalculator> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/image/image copy 6.png',
+                      'assets/image/image copy 30.png',
                       height: 100,
                       width: 100,
                     ),
@@ -218,8 +218,7 @@ class _ProteinCalculatorState extends State<ProteinCalculator> {
                       ),
                     ],
                   );
-                },
-                ),
+                }),
               ],
             ),
           ),
