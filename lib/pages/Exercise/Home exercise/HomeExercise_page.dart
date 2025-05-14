@@ -7,8 +7,8 @@ import 'package:health_app/pages/Exercise/chest/Chest_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_gymExercise.dart';
 
-class GymExercise extends StatelessWidget {
-  const GymExercise({super.key});
+class  HomeexercisePage extends StatelessWidget {
+  const HomeexercisePage ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class GymExercise extends StatelessWidget {
           ),
         ],
         title: Text(
-          'Gym Exercise',
+          'Home Exercise',
           style: TextStyle(
             color: Colors.white,
             fontFamily: 'KottaOne',
