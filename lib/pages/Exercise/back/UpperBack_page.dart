@@ -5,7 +5,7 @@ import 'package:health_app/widgets/%20custom_article.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
 class Upperback extends StatelessWidget {
-  const Upperback ({super.key});
+  const Upperback({super.key});
 
   @override
   Widget build(BuildContext context) {

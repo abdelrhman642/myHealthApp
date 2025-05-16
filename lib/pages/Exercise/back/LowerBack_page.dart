@@ -4,8 +4,8 @@ import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/%20custom_article.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
-class  Lowerback extends StatelessWidget {
-  const  Lowerback({super.key});
+class Lowerback extends StatelessWidget {
+  const Lowerback({super.key});
 
   @override
   Widget build(BuildContext context) {

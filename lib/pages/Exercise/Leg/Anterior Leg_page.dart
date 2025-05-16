@@ -4,8 +4,8 @@ import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/%20custom_article.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
-class  AnteriorlegPage extends StatelessWidget {
-  const AnteriorlegPage ({super.key});
+class AnteriorlegPage extends StatelessWidget {
+  const AnteriorlegPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -30,7 +30,7 @@ class _CaloriescalculatorState extends State<Caloriescalculator> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      appBar:CustomAppbar(text: 'Calories Calculator'),
+      appBar: CustomAppbar(text: 'Calories Calculator'),
       body: ListView(
         children: [
           Column(

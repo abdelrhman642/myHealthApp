@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/Utilities/BMI%20Calculator/BMICalculator_page.dart';
 import 'package:health_app/pages/Utilities/Calories%20Calculator/CaloriesCalculator_page.dart';
 import 'package:health_app/pages/Utilities/WaterCalculator/WaterCalculator.dart';
 import 'package:health_app/pages/Utilities/proteinCalculator/proteinCalculator_page.dart';
@@ -23,7 +24,12 @@ class Utilitieshomepage extends StatelessWidget {
                   image: 'assets/image/Rectangle 30 copy.png',
                   text: '    BMI\nCalculator',
 
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BMICalculator()),
+                    );
+                  },
                 ),
                 CustomUtilitiesContainer(
                   image: 'assets/image/fluent-emoji_cut-of-meat.png',

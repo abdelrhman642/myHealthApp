@@ -11,7 +11,7 @@ class LowerChest extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      appBar:CustomAppbar(text: 'lower chest'),
+      appBar: CustomAppbar(text: 'lower chest'),
       body: ListView(
         children: [
           customArticle(

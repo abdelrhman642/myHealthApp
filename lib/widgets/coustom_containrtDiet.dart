@@ -5,16 +5,16 @@ class CustomContainerDiet extends StatelessWidget {
     super.key,
     required this.customImage,
     required this.name,
-    required this.value1,
-    required this.value2,
-    required this.value3,
+    required this.protein,
+    required this.fats,
+    required this.carb,
     required this.finalGram,
     required this.finalCalories,
   });
   final String? name;
-  final String? value1;
-  final String? value2;
-  final String? value3;
+  final String? protein;
+  final String? fats;
+  final String? carb;
   final String? customImage;
   final String? finalGram;
   final String? finalCalories;
@@ -48,13 +48,10 @@ class CustomContainerDiet extends StatelessWidget {
                     children: [
                       Text(
                         ' protein: ',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'KottaOne',
-                        ),
+                        style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value1!,
+                        protein!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',
@@ -67,13 +64,10 @@ class CustomContainerDiet extends StatelessWidget {
                     children: [
                       Text(
                         ' Fats: ',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'KottaOne',
-                        ),
+                        style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value2!,
+                        fats!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',
@@ -86,13 +80,10 @@ class CustomContainerDiet extends StatelessWidget {
                     children: [
                       Text(
                         ' carb: ',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'KottaOne',
-                        ),
+                        style: TextStyle(fontSize: 20, fontFamily: 'KottaOne'),
                       ),
                       Text(
-                        value3!,
+                        carb!,
                         style: TextStyle(
                           fontSize: 20,
                           fontFamily: 'KottaOne',

@@ -14,6 +14,7 @@ class ProteinCalculator extends StatefulWidget {
 class _ProteinCalculatorState extends State<ProteinCalculator> {
   int weight = 50;
   String selectedLevel = 'No exercise';
+  bool isMale = true;
 
   final List<String> fitnessLevels = [
     'No exercise',
@@ -34,56 +35,71 @@ class _ProteinCalculatorState extends State<ProteinCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(25),
-                ),
-                height: 200,
-                width: 200,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      'assets/image/image copy 6.png',
-                      height: 100,
-                      width: 100,
-                    ),
-                    Text(
-                      'M A L E',
-                      style: TextStyle(
-                        color: Color(0xff990011),
-                        fontSize: 25,
-                        fontFamily: 'KottaOne',
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    isMale = true;
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: isMale ? KAppBarColor : Colors.white,
+
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  height: 200,
+                  width: 200,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/image/image copy 6.png',
+                        height: 100,
+                        width: 100,
                       ),
-                    ),
-                  ],
+                      Text(
+                        'M A L E',
+                        style: TextStyle(
+                          color: Color(0xff990011),
+                          fontSize: 25,
+                          fontFamily: 'KottaOne',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(25),
-                ),
-                height: 200,
-                width: 200,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      'assets/image/image copy 30.png',
-                      height: 100,
-                      width: 100,
-                    ),
-                    Text(
-                      'F E M A L E',
-                      style: TextStyle(
-                        color: Color(0xff990011),
-                        fontSize: 25,
-                        fontFamily: 'KottaOne',
+              GestureDetector(
+                 onTap: () {
+                  setState(() {
+                    isMale = false;
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: !isMale ? KAppBarColor : Colors.white,
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  height: 200,
+                  width: 200,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/image/image copy 30.png',
+                        height: 100,
+                        width: 100,
                       ),
-                    ),
-                  ],
+                      Text(
+                        'F E M A L E',
+                        style: TextStyle(
+                          color: Color(0xff990011),
+                          fontSize: 25,
+                          fontFamily: 'KottaOne',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

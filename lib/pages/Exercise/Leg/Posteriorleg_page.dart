@@ -3,8 +3,8 @@ import 'package:health_app/constan.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/%20custom_article.dart';
 
-class  Posteriorleg extends StatelessWidget {
-  const Posteriorleg ({super.key});
+class Posteriorleg extends StatelessWidget {
+  const Posteriorleg({super.key});
 
   @override
   Widget build(BuildContext context) {
