@@ -22,7 +22,7 @@ class _BMICalculatorState extends State<BMICalculator> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      appBar: CustomAppbar(text: 'water Calculator'),
+      appBar: CustomAppbar(text: 'BMI Calculator'),
       body: Column(
         children: [
           Container(

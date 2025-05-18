@@ -14,7 +14,7 @@ class BMIResuit extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      appBar: CustomAppbar(text: 'Calories result'),
+      appBar: CustomAppbar(text: 'BMI result'),
       body: ListView(
         children: [
           Align(

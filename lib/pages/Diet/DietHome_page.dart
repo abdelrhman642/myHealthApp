@@ -12,7 +12,7 @@ class DietHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KbackroundColor,
-      body: Column(
+      body: ListView(
         children: [
           CustomContainerdiet(
             onTap: () {
