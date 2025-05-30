@@ -6,6 +6,7 @@ class CustomTextfild extends StatefulWidget {
     required this.obscureText,
     required this.colorsIcon,
     required this.prefixIcon,
+          this.controller,
     required this.hintText,
     this.validator,
 
@@ -16,6 +17,7 @@ class CustomTextfild extends StatefulWidget {
   final Color? colorsIcon;
   final bool? obscureText;
   final FormFieldValidator? validator;
+  final TextEditingController? controller;
 
   @override
   State<CustomTextfild> createState() => _CustomTextfildState();
@@ -26,6 +28,7 @@ class _CustomTextfildState extends State<CustomTextfild> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       validator: widget.validator,
       obscureText:obscureText && (widget.obscureText ?? false),
       obscuringCharacter: '*',

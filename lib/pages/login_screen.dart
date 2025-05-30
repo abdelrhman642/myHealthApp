@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:health_app/pages/home_page.dart';
 import 'package:health_app/pages/my_profile_screen.dart';
@@ -5,9 +6,19 @@ import 'package:health_app/pages/register_screen.dart';
 import 'package:health_app/widgets/custom_bottom.dart';
 import 'package:health_app/widgets/custom_textfild.dart';
 
-class LoginWidget extends StatelessWidget {
+class LoginWidget extends StatefulWidget {
   LoginWidget({super.key});
+
+  @override
+  State<LoginWidget> createState() => _LoginWidgetState();
+}
+
+class _LoginWidgetState extends State<LoginWidget> {
   final _formKey = GlobalKey<FormState>();
+
+  TextEditingController _emailController = TextEditingController();
+
+  TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +66,7 @@ class LoginWidget extends StatelessWidget {
                   ),
                   SizedBox(height: 150),
                   CustomTextfild(
+                    controller: _emailController,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter your email address';
@@ -76,6 +88,7 @@ class LoginWidget extends StatelessWidget {
                   ),
                   SizedBox(height: 6),
                   CustomTextfild(
+                    controller: _passwordController,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter your password';
@@ -106,15 +119,22 @@ class LoginWidget extends StatelessWidget {
                         fontSize: 20,
 
                         textColor: Colors.white,
-                        onTap: () {
-                          if (_formKey.currentState!.validate()) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => HomePage(),
-                              ),
-                            );
-                          }
+                        onTap: () async {
+                          print("32423432");
+                          // if (_formKey.currentState!.validate()) {
+                          final res = await Dio().post(
+                            'https://fujijapanelevators.com/api/auth/login',
+                            data: {
+                              'phone': _emailController.text,
+                              'password': _passwordController.text,
+                            },
+                          );
+                          print(res.data);
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                          // }
                         },
                         title: "Login",
                         colorsIcon: Color(0xff00D1FF),

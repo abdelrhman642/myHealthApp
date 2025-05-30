@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:health_app/constan.dart';
-import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 import 'package:health_app/widgets/custom_containerBim.dart';
 

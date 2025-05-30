@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Utilities/BMI%20Calculator/BMIResuit_page.dart';
-import 'package:health_app/pages/Utilities/WaterCalculator/waterResult_pagr.dart';
-import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
 class BMICalculator extends StatefulWidget {

@@ -56,7 +56,7 @@ class StartWidget extends StatelessWidget {
                 SizedBox(height: 20),
                 ElevatedButton.icon(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => LoginWidget()),
                     );
