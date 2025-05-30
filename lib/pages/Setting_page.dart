@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/constan.dart';
+import 'package:health_app/pages/login_screen.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
 class SettingPage extends StatelessWidget {
@@ -140,6 +141,32 @@ class SettingPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 16, bottom: 20),
             child: Divider(color: KAppBarColor),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              InkWell(
+                hoverColor: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+                splashColor: KAppBarColor,
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginWidget()),
+                  );
+                },
+
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'log out',
+                    style: TextStyle(
+                      fontFamily: 'KottaOne',
+                      fontSize: 30, color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

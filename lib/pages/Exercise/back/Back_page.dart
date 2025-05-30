@@ -3,7 +3,6 @@ import 'package:health_app/constan.dart';
 import 'package:health_app/pages/Exercise/back/LowerBack_page.dart';
 import 'package:health_app/pages/Exercise/back/Trapezius_page.dart';
 import 'package:health_app/pages/Exercise/back/UpperBack_page.dart';
-import 'package:health_app/pages/my_profile_screen.dart';
 import 'package:health_app/widgets/customExerciseContainer.dart';
 import 'package:health_app/widgets/custom_AppBar.dart';
 
@@ -15,7 +14,7 @@ class BackPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: KbackroundColor,
       appBar: CustomAppbar(text: 'Back'),
-      body: Column(
+      body: ListView(
         children: [
           ExerciseContainer(
             onTap: () {

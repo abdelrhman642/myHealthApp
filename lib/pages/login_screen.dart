@@ -69,24 +69,30 @@ class _LoginWidgetState extends State<LoginWidget> {
                     controller: _emailController,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter your email address';
+                        return 'Please enter your email address or phone number';
                       }
 
                       final emailRegex = RegExp(
                         r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
                       );
-                      if (!emailRegex.hasMatch(value)) {
-                        return 'Please enter a valid email address';
+                      final phoneRegex = RegExp(
+                        r'^01[0-2,5]{1}[0-9]{8}$',
+                      ); // أرقام موبايل مصرية
+
+                      if (!emailRegex.hasMatch(value) &&
+                          !phoneRegex.hasMatch(value)) {
+                        return 'Please enter a valid email or Egyptian phone number';
                       }
 
                       return null;
                     },
                     obscureText: false,
-                    hintText: "Email Address",
+                    hintText: "Email Address or phone number",
                     prefixIcon: Icons.email,
                     colorsIcon: Color(0xff000C7B),
                   ),
                   SizedBox(height: 6),
+
                   CustomTextfild(
                     controller: _passwordController,
                     validator: (value) {
@@ -121,20 +127,22 @@ class _LoginWidgetState extends State<LoginWidget> {
                         textColor: Colors.white,
                         onTap: () async {
                           print("32423432");
-                          // if (_formKey.currentState!.validate()) {
-                          final res = await Dio().post(
-                            'https://fujijapanelevators.com/api/auth/login',
-                            data: {
-                              'phone': _emailController.text,
-                              'password': _passwordController.text,
-                            },
-                          );
-                          print(res.data);
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(builder: (context) => HomePage()),
-                          );
-                          // }
+                          if (_formKey.currentState!.validate()) {
+                            final res = await Dio().post(
+                              'https://fujijapanelevators.com/api/auth/login',
+                              data: {
+                                'phone': _emailController.text,
+                                'password': _passwordController.text,
+                              },
+                            );
+                            print(res.data);
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomePage(),
+                              ),
+                            );
+                          }
                         },
                         title: "Login",
                         colorsIcon: Color(0xff00D1FF),
